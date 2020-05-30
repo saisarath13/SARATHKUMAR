@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>REGISTRATION</title>
+</head>
+<style>
+    body {
+  background-image: url('https://www.desktopbackground.org/p/2010/06/04/27913_plain-hd-wallpapers_1920x1080_h.jpg');
+  background-size :cover;
+  }
+</style>
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>registration</title>
+</head>
+<body>
+    <form action='REGISTER' method='post'>{% csrf_token %}
+
+       <h1>REGISTRATION FORM</h1>
+
+        <br><br>
+        <label style="font-size:25px;" for="first_name"><b>FIRST NAME</b></label><br>
+        <input style="font-size:20px;" type="text" name="first_name"size="30" placeholder="firstname" required><br>
+        <br>
+         <label style="font-size:25px;"  for="last_name"><b>LAST NAME</b></label><br>
+         <input style="font-size:20px;"  type="text" name="last_name"size="30"  placeholder= "lastname" required><br>
+           <br>
+         <label style="font-size:25px;"  for="username"><b>USERNAME</b></label><br>
+         <input style="font-size:20px;"  type="text" name="username"size="30"  placeholder="username" required><br>
+           <br>
+          <label style="font-size:25px;" for="email"><b>Email</b></label><br>
+         <input style="font-size:20px;" type="text" name="email"size="30" placeholder="email" required><br>
+           <br>
+         <label style="font-size:25px;"  for="password1"><b>PASSWORD</b></label><br>
+         <input style="font-size:20px;" type="password" name="password1"size="30" placeholder="password" required><br>
+           <br>
+         <label style="font-size:22px;"  for="password2"><b>CONFIRM PASSWORD</b></label><br>
+         <input  style="font-size:20px;"   type="password"  name="password2" size="30" placeholder="confirm password" required><br>
+           <br>
+
+
+        <input style="font-size:20px;" type="submit">
+
+
+    </form>
+
+    <div>
+       {% for message in messages %}
+       <h1> {{message}} </h1>
+       {% endfor %}
+    </div>
+
+</body>
+</html>

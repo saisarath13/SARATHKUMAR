@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MAHADEV</title>
+</head>
+<style>
+    body {
+  background-image: url('https://i.pinimg.com/originals/fa/7f/e0/fa7fe0e1b123aee12d0a7f5c3142fb41.jpg');
+  background-size :cover;
+  }
+
+</style>
+
+
+
+<center><h1> DRAWING TALENTS</h1></center>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+
+
+<p style="color:white;"><button style="margin-left:33em;font-size:17px;"  onclick="myFunction()">Rules and Regulations</button></p>
+
+<div id="myDIV"></div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myDIV");
+  if (x.innerHTML === "") {
+    x.innerHTML = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa<br>aaaaaaaaaaaaa<br>aaaaaaaaaaaaaaaaaaaaaaaaaa";
+  } else {
+    x.innerHTML = "";
+  }
+}
+</script>
+
+</body>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 50%;
+  max-width: 400px;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)}
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<center><p><b><i><strong>click me</strong></i></b></p><img   id="myImg"  src="qr.png"></center>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("myImg");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+</script>
+
+</body>
+
+<body>
+<form method="POST" enctype="multipart/form-data">
+	{% csrf_token %}
+     <label style="font-size:20px;margin-left:3.75em;color:#ffbf00;" for="name"><i><b>NAME</b></i></label><br>
+       <input style="font-size:15px;margin-left:5em;" type="text" name="name"placeholder="NAME"><br>
+    <br>
+      <label style="font-size:20px;margin-left:3.75em;color:#ffbf00;" for="event"><b><i>EVENT</i></b></label><br>
+    <input style="font-size:15px;margin-left:5em;" type="text" name="event"placeholder="EVENT" ><br><br>
+
+     <label style="font-size:20px;margin-left:3.75em;color:#ffbf00;" for="image"><b><i>IMAGE</i></b></label><br>
+    <input style="font-size:15px;margin-left:5em;" type="file" name="image" ><br><br>
+
+     <label style="font-size:20px;margin-left:3.75em;color:#ffbf00;" for="amount"><b><i>AMOUNT</i></b></label><br>
+    <input style="font-size:15px;margin-left:5em;" type="text" name="amount"placeholder="AMOUNT" ><br>
+        <br>
+
+
+
+      <input style="font-size:20px;margin-left:3.75em;color:green;" type="submit" value="Submit">
+
+</form>
+
+
+<p style="margin-left:18em;font-size:25px;color:red;text-decoration: underline;"><i ><b>versus[2 in 1]</b></i> </p>
+
+<body>
+<form method="POST" enctype="multipart/form-data">
+	{% csrf_token %}
+
+
+     <label  style="margin-left:36.5em;font-size:21px;color: #ffff00;" for="name"><b><i>NAME</i></b></label><br>
+       <input  style="margin-left:48em;font-size:16px;"  type="text" name="name"placeholder="NAME"><br>
+    <br>
+     <label  style="margin-left:36.5em;font-size:21px;color:#ffff00;" for="event"><b><i>EVENT</i></b></label><br>
+    <input  style="margin-left:48em;font-size:16px;" type="text" name="event"placeholder="EVENT"><br>    <br>
+
+     <label  style="margin-left:36.52em;font-size:21px;color:#ffff00;" for="image"><b><i>IMAGE</i></b></label><br>
+    <input   style="margin-left:48em;font-size:16px;" type="file" name="image" ><br><br>
+     <label style="font-size:21px;margin-left:36.52em;color:#ffff00;" for="amount"><b><i>AMOUNT</i></b></label><br>
+    <input style="font-size:16px;margin-left:48em;" type="text" name="amount"placeholder="AMOUNT" ><br>
+        <br>
+
+
+
+      <input  style="margin-left:36.5em;font-size:21px;color:green;" type="submit" value="Submit">
+
+</form>
+</body>
+
+</body>
+</html>
+
+
